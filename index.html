@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IIA - Inteligencia Artificial Avanzada</title>
+  <style>
+    :root {
+      --green-dark: #14532d;
+      --green-accent: #166534;
+      --gray-light: #f5f5f5;
+      --gray-border: #e0e0e0;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: #fff;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--green-dark);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 30px;
+      gap: 40px;
+      width: 100%;
+    }
+    aside.sidebar {
+      flex: 1;
+      background-color: var(--gray-light);
+      border: 1px solid var(--gray-border);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+      user-select: none;
+    }
+    aside.sidebar h3 {
+      font-size: 1.1rem;
+      color: var(--green-accent);
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    aside.sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    aside.sidebar li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    aside.sidebar li::before {
+      content: "➤ ";
+      color: var(--green-accent);
+    }
+    aside.sidebar a {
+      color: var(--green-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    aside.sidebar a:hover {
+      text-decoration: underline;
+    }
+    section.content {
+      flex: 2.5;
+      line-height: 1.75;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--green-accent);
+      border-bottom: 2px solid var(--gray-border);
+      padding-bottom: 5px;
+      user-select: none;
+    }
+    h3 {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #111;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: var(--green-dark);
+      color: #eee;
+      font-size: 0.95rem;
+      border-top: 2px solid #0f3e1b;
+      margin-top: 80px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 0;
+      }
+      aside.sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🤖 IIA - Inteligencia Artificial Avanzada
+  </header>
+  <main>
+    <aside class="sidebar">
+      <h3>🔧 Navegación</h3>
+      <ul>
+        <li><strong>🏠 Página Principal</strong></li>
+        <li><a href="paneldeiasmasusadas.html">📊 Panel de IAs Más Usadas</a></li>
+        <li><a href="IAparavideojuegos.html">🎮 IA para Videojuegos</a></li>
+      </ul>
+      <h3>🔧 Próximamente</h3>
+      <ul>
+        <li>Visualizador de circuitos neuronales</li>
+        <li>Comparador de precios y funcionalidades</li>
+        <li>Área para desarrolladores</li>
+        <li>Guías de uso avanzadas</li>
+      </ul>
+      <h3>🔌 Temas en desarrollo</h3>
+      <ul>
+        <li>IA y privacidad</li>
+        <li>IA en medicina</li>
+        <li>Automatización laboral</li>
+      </ul>
+    </aside>
+    <section class="content">
+      <h2>🌐 Bienvenido a IIA</h2>
+      <p>En IIA, tu portal de referencia sobre Inteligencia Artificial, descubrirás cómo esta tecnología está transformando el mundo a velocidades nunca antes vistas. Desde aplicaciones cotidianas hasta avances disruptivos en sectores como salud, arte, educación y videojuegos.</p>
+
+      <p>🤖 Aquí podrás encontrar información detallada sobre las mejores inteligencias artificiales gratuitas y de pago, con análisis claros, ventajas y usos recomendados. Además, te mostraremos las herramientas más potentes para crear imágenes, generar texto y automatizar procesos creativos.</p>
+
+      <p>🚀 La inteligencia artificial no es solo una tendencia, es una revolución que está impulsando la innovación y abriendo puertas a un futuro donde la colaboración entre humanos y máquinas será esencial.</p>
+
+      <section>
+        <h3>¿Qué puedes encontrar en IIA?</h3>
+        <ul>
+          <li>✅ Información actualizada sobre los mejores modelos de IA disponibles.</li>
+          <li>✅ Comparativas entre herramientas gratuitas y profesionales.</li>
+          <li>✅ Guías para principiantes y expertos en IA.</li>
+          <li>✅ Ejemplos prácticos y casos de uso en diferentes sectores.</li>
+          <li>✅ Sección especial dedicada a IA para videojuegos.</li>
+          <li>✅ Consejos para aprovechar la IA en creación artística y generación de contenido.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>¿Por qué elegirnos?</h3>
+        <ul>
+          <li>✔️ Contenido imparcial y riguroso.</li>
+          <li>✔️ Diseño moderno, claro y fácil de navegar.</li>
+          <li>✔️ Actualizaciones frecuentes para mantenerte al día.</li>
+          <li>✔️ Comunidad interesada en la innovación tecnológica.</li>
+          <li>✔️ Recursos gratuitos para aprender y experimentar con IA.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Prepárate para el futuro</h3>
+        <p>La Inteligencia Artificial es una herramienta poderosa que está redefiniendo la manera en que vivimos, trabajamos y creamos. Conocerla, entenderla y dominarla es clave para estar preparado ante los retos y oportunidades del siglo XXI.</p>
+        <p>En IIA, te ayudamos a dar ese paso con contenido educativo, análisis profundos y acceso a las mejores tecnologías del mercado.</p>
+      </section>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 IIA - Futuro Potenciado por Inteligencia Artificial
+  </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IIA - IA para Videojuegos</title>
+  <style>
+    :root {
+      --green-dark: #14532d;
+      --green-accent: #166534;
+      --gray-light: #f5f5f5;
+      --gray-border: #e0e0e0;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: #fff;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--green-dark);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 30px;
+      gap: 40px;
+      width: 100%;
+    }
+    aside.sidebar {
+      flex: 1;
+      background-color: var(--gray-light);
+      border: 1px solid var(--gray-border);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+      user-select: none;
+    }
+    aside.sidebar h3 {
+      font-size: 1.1rem;
+      color: var(--green-accent);
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    aside.sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    aside.sidebar li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    aside.sidebar li::before {
+      content: "➤ ";
+      color: var(--green-accent);
+    }
+    aside.sidebar a {
+      color: var(--green-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    aside.sidebar a:hover {
+      text-decoration: underline;
+    }
+    section.content {
+      flex: 2.5;
+      line-height: 1.75;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--green-accent);
+      border-bottom: 2px solid var(--gray-border);
+      padding-bottom: 5px;
+      user-select: none;
+    }
+    h3 {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #111;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    ul {
+      margin-left: 20px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: var(--green-dark);
+      color: #eee;
+      font-size: 0.95rem;
+      border-top: 2px solid #0f3e1b;
+      margin-top: 80px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 0;
+      }
+      aside.sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🤖 IIA - IA para Videojuegos
+  </header>
+  <main>
+    <aside class="sidebar">
+      <h3>🔧 Navegación</h3>
+      <ul>
+        <li><a href="index.html">🏠 Página Principal</a></li>
+        <li><a href="paneldeiasmasusadas.html">📊 Panel de IAs Más Usadas</a></li>
+        <li><strong>🎮 IA para Videojuegos</strong></li>
+      </ul>
+      <h3>🔧 Próximamente</h3>
+      <ul>
+        <li>Visualizador de circuitos neuronales</li>
+        <li>Comparador de precios y funcionalidades</li>
+        <li>Área para desarrolladores</li>
+        <li>Guías de uso avanzadas</li>
+      </ul>
+      <h3>🔌 Temas en desarrollo</h3>
+      <ul>
+        <li>IA y privacidad</li>
+        <li>IA en medicina</li>
+        <li>Automatización laboral</li>
+      </ul>
+    </aside>
+    <section class="content">
+      <h2>🎮 Inteligencia Artificial para Videojuegos</h2>
+      
+      <p>La inteligencia artificial (IA) está revolucionando la industria de los videojuegos, no solo mejorando la experiencia del jugador, sino también transformando la manera en que se desarrollan y diseñan los juegos.</p>
+
+      <p>Desde enemigos y aliados que aprenden y se adaptan, hasta generación procedural de mundos y narrativas personalizadas, la IA está detrás de algunas de las innovaciones más emocionantes en gaming.</p>
+
+      <h3>🕹️ Aplicaciones clave de IA en videojuegos</h3>
+      <ul>
+        <li><strong>Comportamiento dinámico de NPCs:</strong> Los personajes no jugadores (NPCs) con IA avanzada pueden adaptarse a las acciones del jugador, ofreciendo retos más realistas y experiencias únicas.</li>
+        <li><strong>Generación procedural:</strong> Creación automática de mapas, niveles, misiones y contenido, lo que permite juegos prácticamente infinitos y personalizados.</li>
+        <li><strong>Optimización y testing:</strong> La IA ayuda a detectar errores y mejorar el rendimiento, probando el juego de forma rápida y exhaustiva.</li>
+        <li><strong>Narrativas adaptativas:</strong> Historias que cambian en función de las decisiones del jugador, creando experiencias más inmersivas.</li>
+        <li><strong>Reconocimiento de voz y procesamiento del lenguaje natural:</strong> Permite interacciones más naturales con personajes y comandos de voz en el juego.</li>
+      </ul>
+
+      <h3>🚀 Tecnologías de IA más usadas en videojuegos</h3>
+      <ul>
+        <li><strong>Machine Learning:</strong> Para que los NPCs aprendan y mejoren sus estrategias con el tiempo.</li>
+        <li><strong>Redes Neuronales:</strong> Utilizadas en reconocimiento de patrones y para crear comportamientos complejos.</li>
+        <li><strong>Algoritmos Genéticos:</strong> Para optimizar el diseño de niveles y sistemas de juego.</li>
+        <li><strong>Procesamiento de Lenguaje Natural:</strong> Facilita diálogos interactivos y personalizados.</li>
+        <li><strong>Visión por Computadora:</strong> Para juegos de realidad aumentada y detección de movimientos.</li>
+      </ul>
+
+      <h3>🎨 IA y creación de contenido en videojuegos</h3>
+      <p>Herramientas basadas en IA están permitiendo a desarrolladores generar texturas, modelos 3D, música y efectos de sonido automáticamente, reduciendo tiempos y costos de producción sin sacrificar calidad.</p>
+
+      <h3>🌍 Impacto futuro y desafíos</h3>
+      <p>El futuro del gaming está profundamente ligado a la IA. Se espera que juegos cada vez más inmersivos, personalizados y accesibles emerjan gracias a la IA. Sin embargo, también hay desafíos en ética, privacidad y en evitar que la IA se use para manipular o perjudicar la experiencia del jugador.</p>
+
+      <p>En IIA, te mantendremos informado sobre los avances más importantes y cómo aprovechar estas tecnologías para crear y disfrutar juegos increíbles.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 IIA - Futuro Potenciado por Inteligencia Artificial
+  </footer>
+</body>
+</html>

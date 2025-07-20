@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IIA - Panel de IAs Más Usadas</title>
+  <style>
+    :root {
+      --green-dark: #14532d;
+      --green-accent: #166534;
+      --gray-light: #f5f5f5;
+      --gray-border: #e0e0e0;
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: #fff;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    header {
+      background-color: var(--green-dark);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 30px;
+      gap: 40px;
+      width: 100%;
+    }
+    aside.sidebar {
+      flex: 1;
+      background-color: var(--gray-light);
+      border: 1px solid var(--gray-border);
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      height: fit-content;
+      position: sticky;
+      top: 20px;
+      user-select: none;
+    }
+    aside.sidebar h3 {
+      font-size: 1.1rem;
+      color: var(--green-accent);
+      margin-bottom: 12px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    aside.sidebar ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+    aside.sidebar li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+    aside.sidebar li::before {
+      content: "➤ ";
+      color: var(--green-accent);
+    }
+    aside.sidebar a {
+      color: var(--green-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    aside.sidebar a:hover {
+      text-decoration: underline;
+    }
+    section.content {
+      flex: 2.5;
+      line-height: 1.75;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: var(--green-accent);
+      border-bottom: 2px solid var(--gray-border);
+      padding-bottom: 5px;
+      user-select: none;
+    }
+    h3 {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #111;
+      margin-bottom: 20px;
+      user-select: none;
+    }
+    .ia-panel {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .ia-card {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      flex: 1 1 calc(33% - 20px);
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ia-card:hover {
+      box-shadow: 0 4px 15px rgba(20, 83, 45, 0.4);
+    }
+    .ia-card h4 {
+      margin-top: 0;
+      color: var(--green-accent);
+      user-select: none;
+    }
+    .ia-card p {
+      font-size: 0.95rem;
+      margin: 12px 0 18px;
+      color: #333;
+      flex-grow: 1;
+    }
+    .ia-card button {
+      background-color: var(--green-accent);
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      align-self: flex-start;
+    }
+    .ia-card button:hover {
+      background-color: #0f3e1b;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: var(--green-dark);
+      color: #eee;
+      font-size: 0.95rem;
+      border-top: 2px solid #0f3e1b;
+      margin-top: 80px;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+        margin: 30px 20px;
+        padding: 0;
+      }
+      aside.sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 30px;
+      }
+      .ia-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🤖 IIA - Panel de IAs Más Usadas
+  </header>
+  <main>
+    <aside class="sidebar">
+      <h3>🔧 Navegación</h3>
+      <ul>
+        <li><a href="index.html">🏠 Página Principal</a></li>
+        <li><strong>📊 Panel de IAs Más Usadas</strong></li>
+        <li><a href="iaparavideojuegos.html">🎮 IA para Videojuegos</a></li>
+      </ul>
+      <h3>🔧 Próximamente</h3>
+      <ul>
+        <li>Visualizador de circuitos neuronales</li>
+        <li>IA para videojuegos</li>
+        <li>Comparador de precios y funcionalidades</li>
+        <li>Área para desarrolladores</li>
+      </ul>
+      <h3>🔌 Temas en desarrollo</h3>
+      <ul>
+        <li>IA y privacidad</li>
+        <li>IA en medicina</li>
+        <li>Automatización laboral</li>
+      </ul>
+    </aside>
+    <section class="content">
+      <h2>📊 Panel de IAs Más Usadas</h2>
+      <div class="ia-panel">
+        <div class="ia-card">
+          <h4>ChatGPT</h4>
+          <p>Asistente conversacional avanzado de OpenAI para texto y programación.</p>
+          <button onclick="window.location.href='chatgpt.html'">Más Info</button>
+        </div>
+        <div class="ia-card">
+          <h4>DALL·E 2</h4>
+          <p>Generador de imágenes a partir de texto con resultados sorprendentes.</p>
+          <button onclick="window.location.href='dalle2.html'">Más Info</button>
+        </div>
+        <div class="ia-card">
+          <h4>Midjourney</h4>
+          <p>IA para creación artística y diseños visuales con un toque único.</p>
+          <button onclick="window.location.href='midjourney.html'">Más Info</button>
+        </div>
+        <div class="ia-card">
+          <h4>Google Bard</h4>
+          <p>Asistente conversacional de Google basado en modelos avanzados.</p>
+          <button onclick="window.location.href='googlebard.html'">Más Info</button>
+        </div>
+        <div class="ia-card">
+          <h4>Stable Diffusion</h4>
+          <p>Generador de imágenes open source con gran flexibilidad creativa.</p>
+          <button onclick="window.location.href='stablediffusion.html'">Más Info</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 IIA - Futuro Potenciado por Inteligencia Artificial
+  </footer>
+</body>
+</html>
